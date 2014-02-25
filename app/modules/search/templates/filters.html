@@ -1,0 +1,6 @@
+<ul class="list-group filters">
+    <a ng-repeat="filter in search.filters" class="list-group-item" ng-class="{active: filter.selected === true}" ng-click="toggleFilter(filter)">
+        <span class="badge">{{filter.count}}</span>
+        {{filter.name}}
+    </a>
+</ul>

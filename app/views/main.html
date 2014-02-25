@@ -1,0 +1,12 @@
+<div ng-controller="MainCtrl" class="row">
+    <div class="col-lg">
+        <div class="input-group">
+            <input ng-enter="runSearch()" placeholder="Zoeken naar trefwoorden, publicaties, ..." type="text" class="form-control" ng-model="term">
+      <span class="input-group-btn">
+          <button type="button" class="btn btn-primary" ng-click="runSearch()">
+              <span class="glyphicon glyphicon-search"></span>
+          </button>
+      </span>
+        </div>
+    </div>
+</div>

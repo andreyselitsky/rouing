@@ -1,0 +1,14 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title"><p>You are searching for <i>{{search.term}}</i></p></h3>
+    </div>
+    <div class="panel-body">
+        <div class="list-group">
+            <a ui-sref="document({ id: item.id})" ng-repeat="item in search.results"
+               class="list-group-item {{item.id == 2 ? 'active' : ''}}">
+                <h4 class="list-group-item-heading">{{item.title}}</h4>
+                <p class="list-group-item-text">{{item.summary}}</p>
+            </a>
+        </div>
+    </div>
+</div>

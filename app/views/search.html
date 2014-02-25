@@ -1,0 +1,24 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li class="active"><a ng-href="#">Zoeken</a></li>
+        <li><a ng-href="#">Bladeren</a></li>
+        <li><a ng-href="#">More</a></li>
+    </ul>
+    <h1 class="text-muted">Kluwer Navigator Touch</h1>
+</div>
+
+
+<div ng-controller="MainCtrl" class="row">
+    <div class="col-md-12">
+        <div ui-view="search"></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div ui-view="filters"></div>
+    </div>
+    <div class="col-md-9">
+        <div ui-view="results"></div>
+    </div>
+</div>
