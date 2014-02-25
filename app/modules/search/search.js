@@ -51,6 +51,7 @@ angular.module('bmb.velvet.ui.search', ['bmb.data'])
             templateUrl: baseConfig.templateUrl('layout.html'),
             controller: 'SearchCtrl',
             link: function(scope, element, attrs, controller) {
+                //test
                 controller.init();
             }
         }
