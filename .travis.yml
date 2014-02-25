@@ -2,9 +2,7 @@ language: node_js
 node_js:
   - '0.10'
 before_install:
-  - 'gem install compass'
-  - 'gem uninstall sass --version 3.3.0.rc.5'
-  - 'gem install sass --version 3.2.13'
+  - 'gem install compass -v 0.13.alpha.0 --pre'
 before_script:
   - 'npm install -g bower grunt-cli'
   - 'bower install'
