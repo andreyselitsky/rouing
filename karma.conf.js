@@ -3,13 +3,13 @@
 
 module.exports = function (config) {
     config.set({
-        // base path, that will be used to resolve files and exclude
-        basePath: '',
-
         // generate js files from html templates
         preprocessors: {
             'app/modules/**/*.html': 'ng-html2js'
         },
+
+        // base path, that will be used to resolve files and exclude
+        basePath: '',
 
         // testing framework to use (jasmine/mocha/qunit/...)
         frameworks: ['jasmine'],
@@ -29,6 +29,12 @@ module.exports = function (config) {
             'app/modules/**/*.html'
         ],
 
+        ngHtml2JsPreprocessor: {
+            stripPrefix: 'app/',
+
+            moduleName: 'templates'
+        },
+
         // list of files / patterns to exclude
         exclude: [],
 
@@ -39,7 +45,7 @@ module.exports = function (config) {
 
         // level of logging
         // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
 
 
         // enable / disable watching file and executing tests whenever any file changes

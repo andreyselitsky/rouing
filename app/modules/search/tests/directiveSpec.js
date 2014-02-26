@@ -7,12 +7,7 @@ describe('Unit: Testing search directives', function () {
     var directive;
 
     beforeEach(module('bmb.velvet.ui.search', 'bmb.data'));
-
-    var templates = _.map(['layout.html', 'input.html', 'filters.html', 'results.html'], function (item) {
-        return 'app/modules/search/templates/' + item;
-    });
-
-    beforeEach(module.apply(this, templates));
+    beforeEach(module('templates'));
 
     beforeEach(inject(function ($rootScope, $controller, _$compile_, $location, stubData) {
         $scope = $rootScope.$new();

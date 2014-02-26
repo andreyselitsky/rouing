@@ -40,7 +40,7 @@ angular.module('bmb.velvet.ui.search', ['bmb.data'])
     })
     .constant('baseConfig', {
         templateUrl: function (file) {
-            return 'app/modules/search/templates/' + file;
+            return 'modules/search/templates/' + file;
         }
     })
     .directive('bmbSearch', function (baseConfig) {

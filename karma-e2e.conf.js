@@ -14,7 +14,7 @@ module.exports = function(config) {
       'test/e2e/**/*.js'
     ],
 
-    // list of files / patterns to exclude
+    // list of files /patterns to exclude
     exclude: [],
 
     // web server port
