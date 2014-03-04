@@ -1,0 +1,11 @@
+<div>
+    <div class="row">
+        <div class="col-md-3">
+            <bmb-folders-list ng-if="!model.selectedFolder"></bmb-folders-list>
+            <button ng-if="model.selectedFolder" type="button" class="btn btn-primary" ng-click="backToFolders()">
+                << {{model.selectedFolder.Title}}
+            </button>
+            <div ui-view></div>
+        </div>
+    </div>
+</div>

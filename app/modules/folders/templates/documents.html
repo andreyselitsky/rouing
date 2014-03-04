@@ -1,0 +1,8 @@
+<div class="list-group" ng-show="model.selectedFolder">
+    <a ui-sref="document({ id: item.DocumentId})" ng-repeat="item in model.documents"
+       class="list-group-item">
+        <h4 class="list-group-item-heading">{{item.Title}}</h4>
+
+        <p class="list-group-item-text">{{item.Summary}}</p>
+    </a>
+</div>

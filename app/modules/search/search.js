@@ -3,10 +3,10 @@
  */
 angular.module('bmb.velvet.ui.search', ['bmb.data'])
     .controller('SearchCtrl', function ($scope, $location, stubData) {
-        this.init = function(){
+        this.init = function () {
             performSearch();
 
-            $scope.$on('$locationChangeSuccess',function(evt, absNewUrl, absOldUrl) {
+            $scope.$on('$locationChangeSuccess', function (evt, absNewUrl, absOldUrl) {
                 performSearch();
             });
 
@@ -20,7 +20,7 @@ angular.module('bmb.velvet.ui.search', ['bmb.data'])
                 updateUrl();
             }
         }
-        var performSearch = function(){
+        var performSearch = function () {
             $scope.search = stubData.getData($location.search());
         };
 
@@ -50,7 +50,7 @@ angular.module('bmb.velvet.ui.search', ['bmb.data'])
             replace: true,
             templateUrl: baseConfig.templateUrl('layout.html'),
             controller: 'SearchCtrl',
-            link: function(scope, element, attrs, controller) {
+            link: function (scope, element, attrs, controller) {
                 //test
                 controller.init();
             }

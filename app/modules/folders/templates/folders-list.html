@@ -1,0 +1,7 @@
+<ul class="list-group folders">
+    <a ng-repeat="folder in model.folders" class="list-group-item" ng-class="{active: folder === model.selectedFolder}"
+       ui-sref="folders.documents({folderId: folder.Id})">
+        <span class="badge">{{folder.DocumentsCount}}</span>
+        {{folder.Title}}
+    </a>
+</ul>

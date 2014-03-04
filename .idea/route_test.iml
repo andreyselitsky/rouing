@@ -4,7 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Node.js Dependencies for route_test" level="project" />
+    <orderEntry type="library" name="velvet" level="project" />
+    <orderEntry type="library" name="angular" level="project" />
   </component>
 </module>
 
